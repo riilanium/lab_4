@@ -5,6 +5,10 @@ HashTable::HashTable(size_t size) noexcept
     : _capacity(static_cast<int32_t>(size)), _filled(0), table(size)
 {}
 
+HashTable::~HashTable()
+{
+    table.clear();
+}
 size_t HashTable::hash_function(const KeyType &key) const 
 {
     size_t hash = 0;
