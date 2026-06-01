@@ -3,5 +3,4 @@ project(HashTable)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(HashTable
-        hash_table.cpp)
+add_executable(HashTable, hash_table.cpp)
